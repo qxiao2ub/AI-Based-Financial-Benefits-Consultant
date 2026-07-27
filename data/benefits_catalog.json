@@ -1,0 +1,324 @@
+[
+  {
+    "id": "snap",
+    "name": "SNAP Food Assistance",
+    "category": [
+      "Food",
+      "Cashflow"
+    ],
+    "administrator": "USDA / state agencies",
+    "source_url": "https://www.usa.gov/food-stamps",
+    "source_type": "official_government",
+    "summary": "Helps eligible households buy food through state-administered EBT benefits.",
+    "documents": [
+      "Proof of identity",
+      "Proof of address",
+      "Household income",
+      "Rent or mortgage amount",
+      "Utility bills",
+      "Dependent-care expenses if applicable"
+    ],
+    "next_steps": [
+      "Review your state's SNAP application page from the official source.",
+      "Gather income, household, rent, and utility documents.",
+      "Submit the state application and respond quickly to interview or document requests."
+    ],
+    "notes": "Eligibility and asset rules vary by state. This app provides a screening estimate only."
+  },
+  {
+    "id": "medicaid_chip",
+    "name": "Medicaid / CHIP",
+    "category": [
+      "Health",
+      "Children and families"
+    ],
+    "administrator": "CMS / state Medicaid agencies",
+    "source_url": "https://www.healthcare.gov/medicaid-chip/",
+    "source_type": "official_government",
+    "summary": "Health coverage for eligible low-income adults, children, pregnant people, seniors, and people with disabilities.",
+    "documents": [
+      "Household income",
+      "Social Security numbers when requested",
+      "Immigration or citizenship information when requested",
+      "Current insurance details",
+      "Pregnancy or disability documentation if applicable"
+    ],
+    "next_steps": [
+      "Check your state's Medicaid or CHIP portal.",
+      "Apply through the state agency or the Marketplace.",
+      "Upload requested income and household verification documents."
+    ],
+    "notes": "Income rules and covered groups vary by state. This is not an official determination."
+  },
+  {
+    "id": "housing_voucher",
+    "name": "Housing Choice Voucher / Public Housing",
+    "category": [
+      "Housing and utilities"
+    ],
+    "administrator": "HUD / local public housing agencies",
+    "source_url": "https://www.hud.gov/topics/housing_choice_voucher_program_section_8",
+    "source_type": "official_government",
+    "summary": "Rental assistance for eligible low-income households, administered locally by public housing agencies.",
+    "documents": [
+      "Photo ID",
+      "Household composition",
+      "Income documentation",
+      "Current lease or rent statement",
+      "Asset information",
+      "Local PHA forms"
+    ],
+    "next_steps": [
+      "Find your local public housing agency.",
+      "Check whether waitlists are open.",
+      "Submit the local application and keep contact information current."
+    ],
+    "notes": "Waitlists may be closed or long. Local rules are decisive."
+  },
+  {
+    "id": "liheap",
+    "name": "LIHEAP Energy Assistance",
+    "category": [
+      "Housing and utilities"
+    ],
+    "administrator": "HHS / state LIHEAP offices",
+    "source_url": "https://www.acf.hhs.gov/ocs/programs/liheap",
+    "source_type": "official_government",
+    "summary": "Helps eligible households with home energy bills, weatherization, or energy crises.",
+    "documents": [
+      "Recent utility bill",
+      "Proof of income",
+      "Household size",
+      "Proof of address",
+      "Shutoff notice if applicable"
+    ],
+    "next_steps": [
+      "Find your state or local LIHEAP office.",
+      "Check application season and crisis rules.",
+      "Apply with a recent utility bill and income proof."
+    ],
+    "notes": "Funding windows and crisis rules vary by state and season."
+  },
+  {
+    "id": "wic",
+    "name": "WIC Nutrition Assistance",
+    "category": [
+      "Food",
+      "Children and families",
+      "Health"
+    ],
+    "administrator": "USDA / state WIC agencies",
+    "source_url": "https://www.fns.usda.gov/wic",
+    "source_type": "official_government",
+    "summary": "Nutrition support for eligible pregnant, postpartum, or breastfeeding people, infants, and children under age 5.",
+    "documents": [
+      "Proof of identity",
+      "Proof of residence",
+      "Proof of income",
+      "Pregnancy documentation or child's age records",
+      "Health or nutrition screening if requested"
+    ],
+    "next_steps": [
+      "Contact your local WIC agency.",
+      "Schedule a WIC appointment.",
+      "Bring identity, income, residency, and pregnancy or child records."
+    ],
+    "notes": "WIC requires categorical eligibility and a nutrition-risk screening."
+  },
+  {
+    "id": "tanf",
+    "name": "TANF Cash Assistance",
+    "category": [
+      "Welfare and cash assistance",
+      "Children and families"
+    ],
+    "administrator": "HHS / state TANF agencies",
+    "source_url": "https://www.acf.hhs.gov/ofa/programs/tanf",
+    "source_type": "official_government",
+    "summary": "Temporary cash assistance and work-support services for eligible families with children.",
+    "documents": [
+      "Identity documents",
+      "Proof of children in the household",
+      "Income and assets",
+      "Housing costs",
+      "Work or job-search documentation if requested"
+    ],
+    "next_steps": [
+      "Visit your state TANF office or benefits portal.",
+      "Review family and work requirements.",
+      "Submit documents and attend required interviews or appointments."
+    ],
+    "notes": "Rules, time limits, and work requirements vary by state."
+  },
+  {
+    "id": "unemployment",
+    "name": "Unemployment Insurance",
+    "category": [
+      "Jobs and unemployment"
+    ],
+    "administrator": "State unemployment insurance agency",
+    "source_url": "https://www.usa.gov/unemployment-benefits",
+    "source_type": "official_government",
+    "summary": "Temporary wage replacement for eligible workers who lost work through no fault of their own.",
+    "documents": [
+      "Recent employer information",
+      "Dates of employment",
+      "Reason for separation",
+      "Wage records if available",
+      "Identity verification"
+    ],
+    "next_steps": [
+      "Apply through your state unemployment office as soon as possible.",
+      "File weekly or biweekly certifications.",
+      "Keep records of work search and job contacts if required."
+    ],
+    "notes": "Eligibility depends on state law, wages, separation reason, and ongoing certification."
+  },
+  {
+    "id": "student_aid",
+    "name": "Federal Student Aid / FAFSA",
+    "category": [
+      "Education"
+    ],
+    "administrator": "U.S. Department of Education",
+    "source_url": "https://studentaid.gov/",
+    "source_type": "official_government",
+    "summary": "Grants, loans, and work-study aid for eligible students pursuing education or training.",
+    "documents": [
+      "StudentAid.gov account",
+      "Tax information",
+      "School information",
+      "Dependency information",
+      "Parent or spouse information if required"
+    ],
+    "next_steps": [
+      "Create or access your StudentAid.gov account.",
+      "Complete the FAFSA for the correct academic year.",
+      "Review school aid offers and compare net costs."
+    ],
+    "notes": "Aid depends on program, enrollment, dependency status, and school participation."
+  },
+  {
+    "id": "va_benefits",
+    "name": "VA Benefits",
+    "category": [
+      "Military and veterans",
+      "Health",
+      "Education"
+    ],
+    "administrator": "U.S. Department of Veterans Affairs",
+    "source_url": "https://www.va.gov/service-member-benefits/",
+    "source_type": "official_government",
+    "summary": "Health, education, disability, pension, home loan, and related benefits for eligible service members, veterans, and families.",
+    "documents": [
+      "DD214 or service records",
+      "Medical records if relevant",
+      "Dependent information",
+      "Income and assets for needs-based programs"
+    ],
+    "next_steps": [
+      "Create or sign into VA.gov.",
+      "Choose the benefit type and review eligibility details.",
+      "Submit service records and benefit-specific documents."
+    ],
+    "notes": "Eligibility depends on service history, discharge status, disability, income, and benefit type."
+  },
+  {
+    "id": "eitc",
+    "name": "Earned Income Tax Credit (EITC)",
+    "category": [
+      "Tax",
+      "Cashflow"
+    ],
+    "administrator": "IRS",
+    "source_url": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit-eitc",
+    "source_type": "official_government",
+    "summary": "A refundable tax credit for qualifying workers with low to moderate earned income.",
+    "documents": [
+      "W-2 or 1099 forms",
+      "Social Security numbers",
+      "Filing status",
+      "Dependent information",
+      "Prior-year tax return if available"
+    ],
+    "next_steps": [
+      "Review IRS EITC eligibility rules for the tax year.",
+      "Prepare or amend your tax return if eligible.",
+      "Keep documentation for earned income and qualifying children."
+    ],
+    "notes": "Credit amount changes by tax year, earned income, filing status, and qualifying children."
+  },
+  {
+    "id": "child_care",
+    "name": "Child Care Assistance",
+    "category": [
+      "Children and families",
+      "Jobs and unemployment"
+    ],
+    "administrator": "State child care agencies / ChildCare.gov",
+    "source_url": "https://childcare.gov/consumer-education/get-help-paying-for-child-care",
+    "source_type": "official_government",
+    "summary": "State and local programs may help eligible families pay for child care while working, studying, or training.",
+    "documents": [
+      "Proof of children and ages",
+      "Work or school schedule",
+      "Income documentation",
+      "Child care provider information",
+      "State application forms"
+    ],
+    "next_steps": [
+      "Find your state's child care subsidy agency.",
+      "Check income, activity, and provider requirements.",
+      "Apply and ask about waitlists or priority categories."
+    ],
+    "notes": "Availability, income limits, copays, and waitlists vary by state."
+  },
+  {
+    "id": "nonprofit_credit_counseling",
+    "name": "Nonprofit Credit Counseling / Debt Help",
+    "category": [
+      "Debt",
+      "Credit"
+    ],
+    "administrator": "Nonprofit credit counseling organizations",
+    "source_url": "https://www.nfcc.org/",
+    "source_type": "nonprofit",
+    "summary": "Certified nonprofit counselors can help review budgets, debts, credit, and repayment options.",
+    "documents": [
+      "Debt balances",
+      "Monthly payment amounts",
+      "Interest rates",
+      "Income and expenses",
+      "Credit report if available"
+    ],
+    "next_steps": [
+      "Contact a reputable nonprofit counseling provider.",
+      "Ask about fees before agreeing to any plan.",
+      "Avoid organizations promising guaranteed debt elimination or upfront quick fixes."
+    ],
+    "notes": "This is not a government benefit; it is included as a financial-stability resource."
+  },
+  {
+    "id": "local_211",
+    "name": "Local 211 Human Services Referral",
+    "category": [
+      "Local resources",
+      "Emergency needs"
+    ],
+    "administrator": "United Way 211 and local partners",
+    "source_url": "https://www.211.org/",
+    "source_type": "nonprofit",
+    "summary": "Connects people with local help for food, housing, utilities, transportation, health care, and other essential needs.",
+    "documents": [
+      "ZIP code or address",
+      "Specific need",
+      "Any notices or bills related to the need"
+    ],
+    "next_steps": [
+      "Call 211 or search the local 211 website.",
+      "Explain the urgent need and location.",
+      "Ask for program contacts, eligibility details, and application instructions."
+    ],
+    "notes": "Local resource availability changes frequently. Confirm directly with providers."
+  }
+]
