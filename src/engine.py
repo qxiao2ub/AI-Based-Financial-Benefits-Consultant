@@ -1,14 +1,22 @@
 from __future__ import annotations
 
 from functools import lru_cache
-from typing import Dict, List, Any
+from typing import Any, Dict, List
 
-from .advisor import generate_advisor_message, checklist_for_benefit, documents_for_benefit
+from .advisor import checklist_for_benefit, documents_for_benefit, generate_advisor_message
 from .catalog import load_catalog
 from .feedback import load_feedback_adjustments
-from .models import train_models, profile_to_features, predict_probabilities
-from .rules import score_benefit, DEMO_FPL_NOTE, income_ratio_to_demo_fpl
+from .models import predict_probabilities, profile_to_features, train_models
+from .rules import MODEL_NOTE, income_pressure_ratio, score_benefit
 from .schema import UserProfile
+
+
+def source_url_for_nation(benefit: Dict[str, Any], nation: str) -> str:
+    if nation == "Northern Ireland" and benefit.get("ni_source_url"):
+        return benefit["ni_source_url"]
+    if nation == "Scotland" and benefit.get("scotland_source_url"):
+        return benefit["scotland_source_url"]
+    return benefit["source_url"]
 
 
 @lru_cache(maxsize=1)
@@ -18,33 +26,36 @@ def get_runtime_objects():
     return catalog, trained
 
 
-def evaluate_profile(profile: UserProfile, top_n: int = 8) -> List[Dict[str, Any]]:
+def evaluate_profile(profile: UserProfile, top_n: int = 12) -> List[Dict[str, Any]]:
     catalog, trained = get_runtime_objects()
     X = profile_to_features(profile)
-    supervised_probs = predict_probabilities(trained.supervised_model, X, trained.benefit_ids)
-    neural_probs = predict_probabilities(trained.neural_model, X, trained.benefit_ids)
-    feedback_adjustments = load_feedback_adjustments()
-
+    supervised = predict_probabilities(trained.supervised_model, X, trained.benefit_ids)
+    neural = predict_probabilities(trained.neural_model, X, trained.benefit_ids)
+    feedback = load_feedback_adjustments()
     results: List[Dict[str, Any]] = []
+
     for benefit in catalog:
+        if profile.nation not in benefit.get("nations", []):
+            continue
         bid = benefit["id"]
         rule_score, reasons = score_benefit(profile, benefit)
-        ml_probability = supervised_probs.get(bid, 0.0)
-        neural_probability = neural_probs.get(bid, 0.0)
-        feedback_boost = feedback_adjustments.get(bid, 0.0)
-        final_score = max(0.02, min(0.98, 0.45 * rule_score + 0.35 * ml_probability + 0.15 * neural_probability + feedback_boost))
+        rf = supervised.get(bid, 0.0)
+        nn = neural.get(bid, 0.0)
+        fb = feedback.get(bid, 0.0)
+        final = max(0.02, min(0.98, 0.56*rule_score + 0.25*rf + 0.14*nn + fb))
         result = {
             "benefit": benefit,
             "rule_score": rule_score,
-            "ml_probability": ml_probability,
-            "neural_probability": neural_probability,
-            "feedback_boost": feedback_boost,
-            "final_score": final_score,
+            "ml_probability": rf,
+            "neural_probability": nn,
+            "feedback_boost": fb,
+            "final_score": final,
             "reasons": reasons,
             "checklist": checklist_for_benefit(benefit),
             "documents": documents_for_benefit(benefit),
-            "demo_fpl_ratio": income_ratio_to_demo_fpl(profile),
-            "important_model_note": DEMO_FPL_NOTE,
+            "screening_income_ratio": income_pressure_ratio(profile),
+            "important_model_note": MODEL_NOTE,
+            "source_url": source_url_for_nation(benefit, profile.nation),
         }
         result["advisor_message"] = generate_advisor_message(result)
         results.append(result)
@@ -56,13 +67,13 @@ def evaluate_profile(profile: UserProfile, top_n: int = 8) -> List[Dict[str, Any
 def results_to_table(results: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return [
         {
-            "Rank": idx + 1,
-            "Benefit": r["benefit"]["name"],
-            "Estimated match %": round(100 * r["final_score"], 1),
-            "Rule score %": round(100 * r["rule_score"], 1),
-            "ML probability %": round(100 * r["ml_probability"], 1),
-            "Neural score %": round(100 * r["neural_probability"], 1),
-            "Source": r["benefit"]["source_url"],
+            "Rank": i + 1,
+            "Benefit / support": r["benefit"]["name"],
+            "Screening match %": round(100*r["final_score"], 1),
+            "Rule signal %": round(100*r["rule_score"], 1),
+            "Supervised ML %": round(100*r["ml_probability"], 1),
+            "Neural network %": round(100*r["neural_probability"], 1),
+            "Official/source link": r["source_url"],
         }
-        for idx, r in enumerate(results)
+        for i, r in enumerate(results)
     ]

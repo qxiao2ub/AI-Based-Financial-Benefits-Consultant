@@ -1,324 +1,782 @@
 [
   {
-    "id": "snap",
-    "name": "SNAP Food Assistance",
+    "id": "universal_credit",
+    "name": "Universal Credit",
+    "short_name": "Universal Credit",
     "category": [
-      "Food",
-      "Cashflow"
+      "Income",
+      "Housing",
+      "Living costs"
     ],
-    "administrator": "USDA / state agencies",
-    "source_url": "https://www.usa.gov/food-stamps",
+    "nations": [
+      "England",
+      "Scotland",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "administrator": "Department for Work and Pensions / Department for Communities (NI)",
+    "source_url": "https://www.gov.uk/universal-credit/eligibility",
+    "ni_source_url": "https://www.nidirect.gov.uk/articles/how-much-universal-credit-you-get-and-how-youre-paid",
     "source_type": "official_government",
-    "summary": "Helps eligible households buy food through state-administered EBT benefits.",
+    "last_verified": "2026-10-04",
+    "summary": "A means-tested payment for people on a low income, out of work, or unable to work. Savings and household circumstances matter.",
     "documents": [
-      "Proof of identity",
-      "Proof of address",
-      "Household income",
-      "Rent or mortgage amount",
-      "Utility bills",
-      "Dependent-care expenses if applicable"
+      "Recent payslips or self-employment records",
+      "Housing-cost evidence",
+      "Savings and investment balances",
+      "Childcare costs if relevant",
+      "National Insurance number for the official claim"
     ],
     "next_steps": [
-      "Review your state's SNAP application page from the official source.",
-      "Gather income, household, rent, and utility documents.",
-      "Submit the state application and respond quickly to interview or document requests."
+      "Use an independent benefits calculator for a fuller estimate.",
+      "Check the official Universal Credit eligibility page for your nation.",
+      "If eligible, apply through the official government service and report household changes promptly."
     ],
-    "notes": "Eligibility and asset rules vary by state. This app provides a screening estimate only."
+    "notes": "This app uses a simplified screen. Official rules include work allowances, earnings tapers, housing elements, capital rules and immigration/residency tests."
   },
   {
-    "id": "medicaid_chip",
-    "name": "Medicaid / CHIP",
+    "id": "council_tax_reduction",
+    "name": "Council Tax Reduction / Council Tax Support",
+    "short_name": "Council Tax Reduction",
     "category": [
-      "Health",
-      "Children and families"
+      "Housing",
+      "Council tax"
     ],
-    "administrator": "CMS / state Medicaid agencies",
-    "source_url": "https://www.healthcare.gov/medicaid-chip/",
+    "nations": [
+      "England",
+      "Scotland",
+      "Wales"
+    ],
+    "administrator": "Local council",
+    "source_url": "https://www.gov.uk/apply-council-tax-reduction",
     "source_type": "official_government",
-    "summary": "Health coverage for eligible low-income adults, children, pregnant people, seniors, and people with disabilities.",
+    "last_verified": "2026-10-04",
+    "summary": "A local reduction in Council Tax for some low-income households and people receiving benefits.",
     "documents": [
-      "Household income",
-      "Social Security numbers when requested",
-      "Immigration or citizenship information when requested",
-      "Current insurance details",
-      "Pregnancy or disability documentation if applicable"
+      "Council Tax bill",
+      "Income and benefit evidence",
+      "Savings information",
+      "Tenancy or ownership details",
+      "Household-member details"
     ],
     "next_steps": [
-      "Check your state's Medicaid or CHIP portal.",
-      "Apply through the state agency or the Marketplace.",
-      "Upload requested income and household verification documents."
+      "Find your local council using your postcode.",
+      "Review the council's own Council Tax Reduction rules.",
+      "Apply directly to the council and ask whether backdating is available."
     ],
-    "notes": "Income rules and covered groups vary by state. This is not an official determination."
+    "notes": "Each council runs its own scheme, so the exact reduction and rules vary by area."
   },
   {
-    "id": "housing_voucher",
-    "name": "Housing Choice Voucher / Public Housing",
+    "id": "rate_rebate_ni",
+    "name": "Rate Rebate / Housing Benefit and Rate Relief (Northern Ireland)",
+    "short_name": "Rate support (NI)",
     "category": [
-      "Housing and utilities"
+      "Housing",
+      "Rates"
     ],
-    "administrator": "HUD / local public housing agencies",
-    "source_url": "https://www.hud.gov/topics/housing_choice_voucher_program_section_8",
+    "nations": [
+      "Northern Ireland"
+    ],
+    "administrator": "Northern Ireland Housing Executive / Land & Property Services",
+    "source_url": "https://www.nidirect.gov.uk/articles/housing-benefit-and-rate-relief-tenants",
     "source_type": "official_government",
-    "summary": "Rental assistance for eligible low-income households, administered locally by public housing agencies.",
+    "last_verified": "2026-10-04",
+    "summary": "Northern Ireland uses domestic rates rather than Council Tax. Rate Rebate or Housing Benefit/Rate Relief may help eligible households.",
     "documents": [
-      "Photo ID",
-      "Household composition",
-      "Income documentation",
-      "Current lease or rent statement",
-      "Asset information",
-      "Local PHA forms"
+      "Rates or rent statement",
+      "Income and benefit evidence",
+      "Savings information",
+      "Tenancy or ownership evidence"
     ],
     "next_steps": [
-      "Find your local public housing agency.",
-      "Check whether waitlists are open.",
-      "Submit the local application and keep contact information current."
+      "Check whether Rate Rebate or pension-age Housing Benefit/Rate Relief fits your circumstances.",
+      "Use nidirect and the Housing Executive for the correct route.",
+      "Apply through the official NI service."
     ],
-    "notes": "Waitlists may be closed or long. Local rules are decisive."
+    "notes": "Working-age households on Universal Credit generally use Rate Rebate for help with rates."
   },
   {
-    "id": "liheap",
-    "name": "LIHEAP Energy Assistance",
+    "id": "child_benefit",
+    "name": "Child Benefit",
+    "short_name": "Child Benefit",
     "category": [
-      "Housing and utilities"
+      "Children",
+      "Income"
     ],
-    "administrator": "HHS / state LIHEAP offices",
-    "source_url": "https://www.acf.hhs.gov/ocs/programs/liheap",
+    "nations": [
+      "England",
+      "Scotland",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "administrator": "HM Revenue & Customs",
+    "source_url": "https://www.gov.uk/child-benefit/eligibility",
     "source_type": "official_government",
-    "summary": "Helps eligible households with home energy bills, weatherization, or energy crises.",
+    "last_verified": "2026-10-04",
+    "summary": "A payment for a person responsible for a qualifying child, normally under 16 or under 20 in approved education or training.",
     "documents": [
-      "Recent utility bill",
-      "Proof of income",
-      "Household size",
-      "Proof of address",
-      "Shutoff notice if applicable"
+      "Child's birth/adoption details",
+      "National Insurance number",
+      "Bank details for the official claim",
+      "Education/training information for older qualifying children"
     ],
     "next_steps": [
-      "Find your state or local LIHEAP office.",
-      "Check application season and crisis rules.",
-      "Apply with a recent utility bill and income proof."
+      "Check which person should make the claim if two adults are responsible for the same child.",
+      "Review eligibility for children aged 16 to 19 in approved education or training.",
+      "Claim through HMRC's official service."
     ],
-    "notes": "Funding windows and crisis rules vary by state and season."
+    "notes": "Higher-income households may face the High Income Child Benefit Charge; that is separate from basic eligibility."
   },
   {
-    "id": "wic",
-    "name": "WIC Nutrition Assistance",
+    "id": "pip",
+    "name": "Personal Independence Payment (PIP)",
+    "short_name": "PIP",
     "category": [
-      "Food",
-      "Children and families",
+      "Disability",
       "Health"
     ],
-    "administrator": "USDA / state WIC agencies",
-    "source_url": "https://www.fns.usda.gov/wic",
+    "nations": [
+      "England",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "administrator": "DWP / Department for Communities (NI)",
+    "source_url": "https://www.gov.uk/pip/eligibility",
+    "ni_source_url": "https://www.nidirect.gov.uk/articles/personal-independence-payment-pip",
     "source_type": "official_government",
-    "summary": "Nutrition support for eligible pregnant, postpartum, or breastfeeding people, infants, and children under age 5.",
+    "last_verified": "2026-10-04",
+    "summary": "Extra-cost support for eligible people with a long-term physical or mental health condition or disability that affects daily living or mobility.",
     "documents": [
-      "Proof of identity",
-      "Proof of residence",
-      "Proof of income",
-      "Pregnancy documentation or child's age records",
-      "Health or nutrition screening if requested"
+      "Health-professional letters or reports",
+      "Medication or treatment information",
+      "Examples of how the condition affects daily activities",
+      "Relevant care or support plans"
     ],
     "next_steps": [
-      "Contact your local WIC agency.",
-      "Schedule a WIC appointment.",
-      "Bring identity, income, residency, and pregnancy or child records."
+      "Check whether your condition affects daily-living or mobility activities.",
+      "Gather specific real-life examples and supporting information.",
+      "Start the official claim for your nation."
     ],
-    "notes": "WIC requires categorical eligibility and a nutrition-risk screening."
+    "notes": "PIP is not means-tested. Scotland uses Adult Disability Payment instead."
   },
   {
-    "id": "tanf",
-    "name": "TANF Cash Assistance",
+    "id": "adult_disability_payment_scotland",
+    "name": "Adult Disability Payment (Scotland)",
+    "short_name": "Adult Disability Payment",
     "category": [
-      "Welfare and cash assistance",
-      "Children and families"
+      "Disability",
+      "Health"
     ],
-    "administrator": "HHS / state TANF agencies",
-    "source_url": "https://www.acf.hhs.gov/ofa/programs/tanf",
+    "nations": [
+      "Scotland"
+    ],
+    "administrator": "Social Security Scotland",
+    "source_url": "https://www.mygov.scot/adult-disability-payment/applicants",
     "source_type": "official_government",
-    "summary": "Temporary cash assistance and work-support services for eligible families with children.",
+    "last_verified": "2026-10-04",
+    "summary": "Scotland's disability benefit for eligible people aged 16 to State Pension age whose disability or long-term condition affects everyday life.",
     "documents": [
-      "Identity documents",
-      "Proof of children in the household",
-      "Income and assets",
-      "Housing costs",
-      "Work or job-search documentation if requested"
+      "Supporting information from a professional or wider support network",
+      "Medication/treatment information",
+      "Examples of daily-living or mobility impact"
     ],
     "next_steps": [
-      "Visit your state TANF office or benefits portal.",
-      "Review family and work requirements.",
-      "Submit documents and attend required interviews or appointments."
+      "Use the Social Security Scotland eligibility checker.",
+      "Gather supporting information about how your condition affects you.",
+      "Apply online or by phone/paper through mygov.scot."
     ],
-    "notes": "Rules, time limits, and work requirements vary by state."
+    "notes": "Income and savings are not taken into account for Adult Disability Payment."
   },
   {
-    "id": "unemployment",
-    "name": "Unemployment Insurance",
+    "id": "attendance_allowance",
+    "name": "Attendance Allowance",
+    "short_name": "Attendance Allowance",
     "category": [
-      "Jobs and unemployment"
+      "Disability",
+      "Older people"
     ],
-    "administrator": "State unemployment insurance agency",
-    "source_url": "https://www.usa.gov/unemployment-benefits",
+    "nations": [
+      "England",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "administrator": "DWP / Department for Communities (NI)",
+    "source_url": "https://www.gov.uk/attendance-allowance/eligibility",
     "source_type": "official_government",
-    "summary": "Temporary wage replacement for eligible workers who lost work through no fault of their own.",
+    "last_verified": "2026-10-04",
+    "summary": "Support for people at or above State Pension age who need help with personal care or supervision because of disability or a health condition.",
     "documents": [
-      "Recent employer information",
-      "Dates of employment",
-      "Reason for separation",
-      "Wage records if available",
-      "Identity verification"
+      "Health information",
+      "Care or supervision needs",
+      "Medication and treatment information",
+      "Examples of help needed day and night"
     ],
     "next_steps": [
-      "Apply through your state unemployment office as soon as possible.",
-      "File weekly or biweekly certifications.",
-      "Keep records of work search and job contacts if required."
+      "Check that you have reached State Pension age.",
+      "Describe care and supervision needs in detail, including difficult days.",
+      "Apply through the official service for your nation."
     ],
-    "notes": "Eligibility depends on state law, wages, separation reason, and ongoing certification."
+    "notes": "Scotland uses Pension Age Disability Payment instead."
   },
   {
-    "id": "student_aid",
-    "name": "Federal Student Aid / FAFSA",
+    "id": "pension_age_disability_payment_scotland",
+    "name": "Pension Age Disability Payment (Scotland)",
+    "short_name": "Pension Age Disability Payment",
     "category": [
-      "Education"
+      "Disability",
+      "Older people"
     ],
-    "administrator": "U.S. Department of Education",
-    "source_url": "https://studentaid.gov/",
+    "nations": [
+      "Scotland"
+    ],
+    "administrator": "Social Security Scotland",
+    "source_url": "https://www.mygov.scot/pension-age-disability-payment/applicants",
     "source_type": "official_government",
-    "summary": "Grants, loans, and work-study aid for eligible students pursuing education or training.",
+    "last_verified": "2026-10-04",
+    "summary": "Scotland's disability support for eligible people of State Pension age with care or supervision needs.",
     "documents": [
-      "StudentAid.gov account",
-      "Tax information",
-      "School information",
-      "Dependency information",
-      "Parent or spouse information if required"
+      "Supporting document from a professional",
+      "Care-plan or prescription information",
+      "Examples of day-to-day support needs"
     ],
     "next_steps": [
-      "Create or access your StudentAid.gov account.",
-      "Complete the FAFSA for the correct academic year.",
-      "Review school aid offers and compare net costs."
+      "Use the mygov.scot eligibility checker.",
+      "Collect supporting information that confirms your condition or needs.",
+      "Apply through Social Security Scotland."
     ],
-    "notes": "Aid depends on program, enrollment, dependency status, and school participation."
+    "notes": "Rules differ for people in care homes and for applications linked to terminal illness."
   },
   {
-    "id": "va_benefits",
-    "name": "VA Benefits",
+    "id": "carers_allowance",
+    "name": "Carer's Allowance",
+    "short_name": "Carer's Allowance",
     "category": [
-      "Military and veterans",
+      "Carers",
+      "Income"
+    ],
+    "nations": [
+      "England",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "administrator": "DWP / Department for Communities (NI)",
+    "source_url": "https://www.gov.uk/carers-allowance/eligibility",
+    "source_type": "official_government",
+    "last_verified": "2026-10-04",
+    "summary": "Support for some people who provide at least 35 hours of care each week for a person receiving a qualifying disability benefit.",
+    "documents": [
+      "Details of the person you care for",
+      "Their qualifying disability benefit",
+      "Your earnings and work information",
+      "National Insurance number for the official claim"
+    ],
+    "next_steps": [
+      "Confirm the person you care for receives a qualifying disability benefit.",
+      "Check the 35-hour caring requirement and current earnings rules.",
+      "Review how a claim could affect both people's other benefits before submitting."
+    ],
+    "notes": "Scotland has replaced Carer's Allowance with Carer Support Payment."
+  },
+  {
+    "id": "carer_support_payment_scotland",
+    "name": "Carer Support Payment (Scotland)",
+    "short_name": "Carer Support Payment",
+    "category": [
+      "Carers",
+      "Income"
+    ],
+    "nations": [
+      "Scotland"
+    ],
+    "administrator": "Social Security Scotland",
+    "source_url": "https://www.socialsecurity.gov.scot/guidance-resources/resources/carer-support-payment-resources",
+    "source_type": "official_government",
+    "last_verified": "2026-10-04",
+    "summary": "Scotland's main benefit for eligible unpaid carers. It replaced Carer's Allowance in Scotland.",
+    "documents": [
+      "Caring-hours information",
+      "Details of the qualifying disability benefit received by the person you care for",
+      "Earnings information"
+    ],
+    "next_steps": [
+      "Confirm you provide at least 35 hours of qualifying care a week.",
+      "Check current earnings and residence rules.",
+      "Apply through Social Security Scotland."
+    ],
+    "notes": "From 2026, Scotland also has Scottish Carer Supplement and Carer Additional Person Payment components in the wider carer-support system."
+  },
+  {
+    "id": "new_style_jsa",
+    "name": "New Style Jobseeker's Allowance (JSA)",
+    "short_name": "New Style JSA",
+    "category": [
+      "Work",
+      "Unemployment"
+    ],
+    "nations": [
+      "England",
+      "Scotland",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "administrator": "DWP / Department for Communities (NI)",
+    "source_url": "https://www.gov.uk/jobseekers-allowance/eligibility",
+    "source_type": "official_government",
+    "last_verified": "2026-10-04",
+    "summary": "A contribution-based unemployment benefit for some people with sufficient recent Class 1 National Insurance contributions.",
+    "documents": [
+      "Employment history",
+      "National Insurance record",
+      "Pension information if relevant",
+      "Bank details for the official claim"
+    ],
+    "next_steps": [
+      "Check your recent National Insurance contribution record.",
+      "Confirm you are under State Pension age and meet work-hour conditions.",
+      "Apply through the official service for your nation."
+    ],
+    "notes": "Savings and a partner's savings do not normally affect New Style JSA."
+  },
+  {
+    "id": "new_style_esa",
+    "name": "New Style Employment and Support Allowance (ESA)",
+    "short_name": "New Style ESA",
+    "category": [
       "Health",
+      "Work"
+    ],
+    "nations": [
+      "England",
+      "Scotland",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "administrator": "DWP / Department for Communities (NI)",
+    "source_url": "https://www.gov.uk/employment-support-allowance/eligibility",
+    "source_type": "official_government",
+    "last_verified": "2026-10-04",
+    "summary": "A contribution-based benefit for some people under State Pension age whose health condition or disability limits how much they can work.",
+    "documents": [
+      "National Insurance record",
+      "Fit note if required",
+      "Health information",
+      "Employment history"
+    ],
+    "next_steps": [
+      "Check your recent National Insurance contributions or credits.",
+      "Get a fit note if the official claim requires one.",
+      "Apply through the correct government service for your nation."
+    ],
+    "notes": "You cannot normally receive New Style ESA at the same time as New Style JSA or Statutory Sick Pay."
+  },
+  {
+    "id": "pension_credit",
+    "name": "Pension Credit",
+    "short_name": "Pension Credit",
+    "category": [
+      "Older people",
+      "Income"
+    ],
+    "nations": [
+      "England",
+      "Scotland",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "administrator": "DWP / Department for Communities (NI)",
+    "source_url": "https://www.gov.uk/pension-credit/eligibility",
+    "source_type": "official_government",
+    "last_verified": "2026-10-04",
+    "summary": "An income-related benefit for eligible people who have reached State Pension age; it can also open access to other support.",
+    "documents": [
+      "Pension and income information",
+      "Savings and investments",
+      "Housing costs",
+      "Partner details if applicable"
+    ],
+    "next_steps": [
+      "Confirm you have reached State Pension age.",
+      "Use the Pension Credit calculator or a benefits adviser.",
+      "Apply through the Pension Service or the NI equivalent."
+    ],
+    "notes": "Savings do not create a simple hard cut-off, but assumed income from capital can affect the award."
+  },
+  {
+    "id": "tax_free_childcare",
+    "name": "Tax-Free Childcare",
+    "short_name": "Tax-Free Childcare",
+    "category": [
+      "Children",
+      "Childcare",
+      "Work"
+    ],
+    "nations": [
+      "England",
+      "Scotland",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "administrator": "HM Revenue & Customs",
+    "source_url": "https://www.gov.uk/tax-free-childcare/check-if-youre-eligible",
+    "source_type": "official_government",
+    "last_verified": "2026-10-04",
+    "summary": "Government top-ups toward approved childcare for eligible working families with qualifying children.",
+    "documents": [
+      "Child details",
+      "Employment/self-employment income",
+      "Partner information if applicable",
+      "National Insurance numbers for the official service",
+      "Approved childcare provider details"
+    ],
+    "next_steps": [
+      "Check your child's age and both adults' work/income conditions if you have a partner.",
+      "Compare Tax-Free Childcare with Universal Credit childcare support before switching.",
+      "Apply through the Childcare Service."
+    ],
+    "notes": "A person with expected adjusted net income over £100,000 cannot normally qualify."
+  },
+  {
+    "id": "healthy_start",
+    "name": "Healthy Start",
+    "short_name": "Healthy Start",
+    "category": [
+      "Food",
+      "Pregnancy",
+      "Children"
+    ],
+    "nations": [
+      "England",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "administrator": "NHS / NHS Business Services Authority",
+    "source_url": "https://www.gov.uk/healthy-start",
+    "source_type": "official_government",
+    "last_verified": "2026-10-04",
+    "summary": "Help to buy healthy food and milk, plus vitamins, for some pregnant people and families with children under 4.",
+    "documents": [
+      "Pregnancy or child details",
+      "Qualifying-benefit information",
+      "Household details"
+    ],
+    "next_steps": [
+      "Check the pregnancy/child-age condition.",
+      "Check whether you receive a qualifying benefit or meet an exception.",
+      "Apply using the NHS Healthy Start service."
+    ],
+    "notes": "Scotland uses Best Start Foods instead."
+  },
+  {
+    "id": "best_start_foods_scotland",
+    "name": "Best Start Foods (Scotland)",
+    "short_name": "Best Start Foods",
+    "category": [
+      "Food",
+      "Pregnancy",
+      "Children"
+    ],
+    "nations": [
+      "Scotland"
+    ],
+    "administrator": "Social Security Scotland",
+    "source_url": "https://www.mygov.scot/best-start-grant-best-start-foods",
+    "source_type": "official_government",
+    "last_verified": "2026-10-04",
+    "summary": "Scottish support that can help eligible pregnant people and families with young children buy healthy food and milk.",
+    "documents": [
+      "Pregnancy or child details",
+      "Income/benefit information",
+      "Household details"
+    ],
+    "next_steps": [
+      "Check the current Best Start Foods age and income/benefit rules.",
+      "See whether a combined Best Start Grant application is relevant.",
+      "Apply through Social Security Scotland."
+    ],
+    "notes": "Eligibility and payment rules are set by Social Security Scotland."
+  },
+  {
+    "id": "warm_home_discount",
+    "name": "Warm Home Discount",
+    "short_name": "Warm Home Discount",
+    "category": [
+      "Energy",
+      "Bills"
+    ],
+    "nations": [
+      "England",
+      "Scotland",
+      "Wales"
+    ],
+    "administrator": "Department for Energy Security & Net Zero / participating suppliers",
+    "source_url": "https://www.gov.uk/the-warm-home-discount-scheme",
+    "source_type": "official_government",
+    "last_verified": "2026-10-04",
+    "summary": "A one-off electricity-bill discount for eligible households. Eligibility routes differ across England/Wales and Scotland.",
+    "documents": [
+      "Electricity account details",
+      "Qualifying-benefit information",
+      "Energy supplier information"
+    ],
+    "next_steps": [
+      "Check the current scheme-year rules for your nation.",
+      "Confirm your electricity supplier participates.",
+      "Follow any letter or supplier instructions if data matching cannot confirm eligibility automatically."
+    ],
+    "notes": "The 2026/27 scheme is £150; Northern Ireland uses different energy-support schemes."
+  },
+  {
+    "id": "cold_weather_or_winter_heating",
+    "name": "Cold Weather Payment / Winter Heating Payment",
+    "short_name": "Winter heating support",
+    "category": [
+      "Energy",
+      "Bills"
+    ],
+    "nations": [
+      "England",
+      "Scotland",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "administrator": "DWP / Social Security Scotland / Department for Communities (NI)",
+    "source_url": "https://www.gov.uk/cold-weather-payment/eligibility",
+    "scotland_source_url": "https://www.mygov.scot/winter-heating-payment",
+    "ni_source_url": "https://www.nidirect.gov.uk/articles/cold-weather-payment",
+    "source_type": "official_government",
+    "last_verified": "2026-10-04",
+    "summary": "Automatic winter support for some households receiving qualifying benefits. Scotland uses Winter Heating Payment rather than Cold Weather Payment.",
+    "documents": [
+      "Usually no separate application; keep benefit and address details current"
+    ],
+    "next_steps": [
+      "Check whether you receive a qualifying benefit.",
+      "Make sure the relevant agency has accurate household information, especially about young children.",
+      "Use the official scheme page for your nation."
+    ],
+    "notes": "Cold Weather Payment depends on qualifying cold periods; Scotland's Winter Heating Payment does not depend on local temperature."
+  },
+  {
+    "id": "winter_fuel_payment",
+    "name": "Winter Fuel Payment / Scottish pension-age winter support",
+    "short_name": "Pension-age winter support",
+    "category": [
+      "Energy",
+      "Older people"
+    ],
+    "nations": [
+      "England",
+      "Scotland",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "administrator": "DWP / Social Security Scotland",
+    "source_url": "https://www.gov.uk/winter-fuel-payment/eligibility",
+    "source_type": "official_government",
+    "last_verified": "2026-10-04",
+    "summary": "Winter heating support for many people of qualifying age. Scotland has a separate pension-age winter-heating payment system.",
+    "documents": [
+      "Date-of-birth and residence details",
+      "Benefit or State Pension information if relevant"
+    ],
+    "next_steps": [
+      "Check the qualifying birth-date and residence rules for the current winter.",
+      "Check whether payment should be automatic or whether you need to claim.",
+      "If in Scotland, use the current Social Security Scotland pension-age winter-heating guidance."
+    ],
+    "notes": "For winter 2026/27, Winter Fuel Payment in England, Wales and NI is subject to current age/residence rules and recovery through tax above the published income threshold."
+  },
+  {
+    "id": "nhs_low_income_scheme",
+    "name": "NHS Low Income Scheme",
+    "short_name": "NHS Low Income Scheme",
+    "category": [
+      "Health",
+      "Costs"
+    ],
+    "nations": [
+      "England",
+      "Scotland",
+      "Wales"
+    ],
+    "administrator": "NHS Business Services Authority",
+    "source_url": "https://www.nhs.uk/nhs-services/help-with-health-costs/nhs-low-income-scheme-lis/",
+    "source_type": "official_health",
+    "last_verified": "2026-10-04",
+    "summary": "Help with certain NHS health costs for eligible people on a low income who are not already fully exempt through another route.",
+    "documents": [
+      "Income information",
+      "Savings/investments",
+      "Housing costs",
+      "Partner/dependant information"
+    ],
+    "next_steps": [
+      "Check whether you already receive full help through a qualifying benefit or exemption.",
+      "Check the current capital limits and what costs can be covered.",
+      "Apply online if eligible or use an HC1 form."
+    ],
+    "notes": "Northern Ireland has different health-cost arrangements. Scotland already provides some services such as prescriptions without charge."
+  },
+  {
+    "id": "support_for_mortgage_interest",
+    "name": "Support for Mortgage Interest (SMI)",
+    "short_name": "SMI loan",
+    "category": [
+      "Housing",
+      "Mortgage"
+    ],
+    "nations": [
+      "England",
+      "Scotland",
+      "Wales"
+    ],
+    "administrator": "DWP",
+    "source_url": "https://www.gov.uk/support-for-mortgage-interest/eligibility",
+    "source_type": "official_government",
+    "last_verified": "2026-10-04",
+    "summary": "A repayable loan that can help eligible homeowners receiving a qualifying benefit with mortgage or qualifying home-improvement loan interest.",
+    "documents": [
+      "Mortgage balance",
+      "Interest rate",
+      "Lender details",
+      "Qualifying-benefit information"
+    ],
+    "next_steps": [
+      "Confirm you receive a qualifying benefit and meet any waiting period.",
+      "Review the loan terms and repayment implications carefully.",
+      "Complete the official form with your lender if you choose to accept an offer."
+    ],
+    "notes": "SMI is a loan, not a grant, and must normally be repaid with interest when the home is sold or transferred."
+  },
+  {
+    "id": "maternity_allowance",
+    "name": "Maternity Allowance",
+    "short_name": "Maternity Allowance",
+    "category": [
+      "Pregnancy",
+      "Work",
+      "Income"
+    ],
+    "nations": [
+      "England",
+      "Scotland",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "administrator": "DWP / Department for Communities (NI)",
+    "source_url": "https://www.gov.uk/maternity-allowance/overview",
+    "source_type": "official_government",
+    "last_verified": "2026-10-04",
+    "summary": "A payment for some people taking time off to have a baby who cannot get Statutory Maternity Pay, including some self-employed people.",
+    "documents": [
+      "Employment/self-employment history",
+      "Pregnancy due date",
+      "Earnings evidence",
+      "SMP1 form if your employer says you do not qualify for Statutory Maternity Pay"
+    ],
+    "next_steps": [
+      "First check Statutory Maternity Pay eligibility if you are an employee.",
+      "If SMP is not available, check Maternity Allowance work/earnings conditions.",
+      "Apply from the permitted point in pregnancy through the official service."
+    ],
+    "notes": "Maternity Allowance can affect some other benefits."
+  },
+  {
+    "id": "free_school_meals",
+    "name": "Free School Meals / devolved school-meal support",
+    "short_name": "Free School Meals",
+    "category": [
+      "Children",
+      "Food",
       "Education"
     ],
-    "administrator": "U.S. Department of Veterans Affairs",
-    "source_url": "https://www.va.gov/service-member-benefits/",
+    "nations": [
+      "England",
+      "Scotland",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "administrator": "Local authority / devolved education system",
+    "source_url": "https://www.gov.uk/government/publications/free-school-meals-guidance-for-schools-and-local-authorities/free-school-meals-guidance-for-local-authorities-local-authority-maintained-schools-academies-and-free-schools",
     "source_type": "official_government",
-    "summary": "Health, education, disability, pension, home loan, and related benefits for eligible service members, veterans, and families.",
+    "last_verified": "2026-10-04",
+    "summary": "School-meal support varies by UK nation, age and benefit status. England expanded benefits-based eligibility for 2026/27.",
     "documents": [
-      "DD214 or service records",
-      "Medical records if relevant",
-      "Dependent information",
-      "Income and assets for needs-based programs"
+      "Child's school details",
+      "Qualifying-benefit information",
+      "Household information"
     ],
     "next_steps": [
-      "Create or sign into VA.gov.",
-      "Choose the benefit type and review eligibility details.",
-      "Submit service records and benefit-specific documents."
+      "Check your nation/local authority rules and your child's school year.",
+      "Ask the school or council how eligibility is verified.",
+      "Apply or confirm entitlement through the local process."
     ],
-    "notes": "Eligibility depends on service history, discharge status, disability, income, and benefit type."
+    "notes": "This app only flags school-meal support as worth checking; nation-specific rules must be confirmed locally."
   },
   {
-    "id": "eitc",
-    "name": "Earned Income Tax Credit (EITC)",
-    "category": [
-      "Tax",
-      "Cashflow"
-    ],
-    "administrator": "IRS",
-    "source_url": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit-eitc",
-    "source_type": "official_government",
-    "summary": "A refundable tax credit for qualifying workers with low to moderate earned income.",
-    "documents": [
-      "W-2 or 1099 forms",
-      "Social Security numbers",
-      "Filing status",
-      "Dependent information",
-      "Prior-year tax return if available"
-    ],
-    "next_steps": [
-      "Review IRS EITC eligibility rules for the tax year.",
-      "Prepare or amend your tax return if eligible.",
-      "Keep documentation for earned income and qualifying children."
-    ],
-    "notes": "Credit amount changes by tax year, earned income, filing status, and qualifying children."
-  },
-  {
-    "id": "child_care",
-    "name": "Child Care Assistance",
-    "category": [
-      "Children and families",
-      "Jobs and unemployment"
-    ],
-    "administrator": "State child care agencies / ChildCare.gov",
-    "source_url": "https://childcare.gov/consumer-education/get-help-paying-for-child-care",
-    "source_type": "official_government",
-    "summary": "State and local programs may help eligible families pay for child care while working, studying, or training.",
-    "documents": [
-      "Proof of children and ages",
-      "Work or school schedule",
-      "Income documentation",
-      "Child care provider information",
-      "State application forms"
-    ],
-    "next_steps": [
-      "Find your state's child care subsidy agency.",
-      "Check income, activity, and provider requirements.",
-      "Apply and ask about waitlists or priority categories."
-    ],
-    "notes": "Availability, income limits, copays, and waitlists vary by state."
-  },
-  {
-    "id": "nonprofit_credit_counseling",
-    "name": "Nonprofit Credit Counseling / Debt Help",
+    "id": "free_debt_advice",
+    "name": "Free debt advice and financial guidance",
+    "short_name": "Free debt advice",
     "category": [
       "Debt",
-      "Credit"
+      "Credit",
+      "Guidance"
     ],
-    "administrator": "Nonprofit credit counseling organizations",
-    "source_url": "https://www.nfcc.org/",
-    "source_type": "nonprofit",
-    "summary": "Certified nonprofit counselors can help review budgets, debts, credit, and repayment options.",
+    "nations": [
+      "England",
+      "Scotland",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "administrator": "MoneyHelper and approved/free debt-advice organisations",
+    "source_url": "https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/debt-advice-locator",
+    "source_type": "government_backed_guidance",
+    "last_verified": "2026-10-04",
+    "summary": "Free, confidential debt advice can help prioritise arrears, negotiate with creditors and check benefit entitlements.",
     "documents": [
-      "Debt balances",
-      "Monthly payment amounts",
+      "Debt balances and statements",
       "Interest rates",
-      "Income and expenses",
-      "Credit report if available"
+      "Monthly income and essential spending",
+      "Arrears/court or enforcement letters if any"
     ],
     "next_steps": [
-      "Contact a reputable nonprofit counseling provider.",
-      "Ask about fees before agreeing to any plan.",
-      "Avoid organizations promising guaranteed debt elimination or upfront quick fixes."
+      "Use MoneyHelper's debt-advice locator to find free help.",
+      "Prioritise housing, energy, council-tax/rates and court-related debts before unsecured credit.",
+      "Avoid firms that demand large upfront fees or guarantee debt write-offs."
     ],
-    "notes": "This is not a government benefit; it is included as a financial-stability resource."
+    "notes": "This is not a government benefit. It is included because debt, loans and credit stress are part of the app's financial-needs assessment."
   },
   {
-    "id": "local_211",
-    "name": "Local 211 Human Services Referral",
+    "id": "benefits_calculator_referral",
+    "name": "Independent UK benefits calculator / adviser check",
+    "short_name": "Benefits calculator",
     "category": [
-      "Local resources",
-      "Emergency needs"
+      "Benefits check",
+      "Guidance"
     ],
-    "administrator": "United Way 211 and local partners",
-    "source_url": "https://www.211.org/",
-    "source_type": "nonprofit",
-    "summary": "Connects people with local help for food, housing, utilities, transportation, health care, and other essential needs.",
+    "nations": [
+      "England",
+      "Scotland",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "administrator": "Independent calculators listed by GOV.UK / local advisers",
+    "source_url": "https://www.gov.uk/benefits-calculators",
+    "source_type": "official_government_referral",
+    "last_verified": "2026-10-04",
+    "summary": "GOV.UK lists free independent calculators such as entitledto, Turn2us and Policy in Practice for more detailed benefits estimates.",
     "documents": [
-      "ZIP code or address",
-      "Specific need",
-      "Any notices or bills related to the need"
+      "Accurate income and partner income",
+      "Savings",
+      "Existing benefits and pensions",
+      "Rent/mortgage and childcare costs",
+      "Council Tax or rates bill"
     ],
     "next_steps": [
-      "Call 211 or search the local 211 website.",
-      "Explain the urgent need and location.",
-      "Ask for program contacts, eligibility details, and application instructions."
+      "Run one of the calculators listed by GOV.UK.",
+      "Use accurate figures from recent documents.",
+      "For complex cases, speak to a local benefits adviser rather than relying only on an automated result."
     ],
-    "notes": "Local resource availability changes frequently. Confirm directly with providers."
+    "notes": "Some calculators are not accurate for certain groups such as some students, prisoners, people in residential care, or people with complex immigration status."
   }
 ]

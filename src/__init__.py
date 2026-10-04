@@ -1,1 +1,1 @@
-"""Financial Benefits Consultant MVP package."""
+"""UK AI Financial Benefits Consultant package."""
